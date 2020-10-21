@@ -1,0 +1,16 @@
+package edu.ilstu;
+
+import java.util.Scanner;
+
+public class CircleCheck {
+
+	public static void main(String[] args) {
+		
+		Circle circ = new Circle();
+		 
+			
+			
+
+	}
+
+}

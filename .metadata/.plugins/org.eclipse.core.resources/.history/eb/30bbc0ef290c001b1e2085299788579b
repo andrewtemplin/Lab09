@@ -1,0 +1,17 @@
+package edu.ilstu;
+
+public class hj {
+
+	public static void main(String[] args) {
+		int number = 20;
+		int zero = 0;
+		
+		while (number > zero)
+		{
+			System.out.println(number - 5);
+			number -= 2;
+		}
+		System.out.println("Final number: " + number);
+	}
+
+}

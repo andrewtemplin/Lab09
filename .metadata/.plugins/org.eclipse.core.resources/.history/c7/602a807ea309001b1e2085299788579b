@@ -1,0 +1,20 @@
+package edu.ilstu;
+
+public class CIrcleUML {
+
+	public static void main(String[] args) {}
+		
+		
+			private int number;
+			public int getNumber() {
+				return number;
+				
+			}
+			public void setNumber(int newNumber) {
+				number = newNumber;
+			}
+	
+
+	}
+
+

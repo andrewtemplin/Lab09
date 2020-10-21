@@ -1,0 +1,19 @@
+package edu.ilstu;
+
+import java.util.Scanner;
+
+public class CircleCheck {
+
+	public static void main(String[] args) {
+		
+		Circle circ = new Circle();
+		 
+			Scanner scan = new Scanner(System.in);
+			System.out.println("Enter radius of circle: ");
+			double radius = scan.nextDouble();
+			circ.getRadius();
+			
+
+	}
+
+}
