@@ -40,22 +40,26 @@ public class Student {
 	}
 	public void study(int time) {
 		if (studentType == 'g')
-			this.currentBrainPower = time * 2;
-		if (studentType == 'r')
-			this.currentBrainPower = time * 0.75;
-				
+			this.currentBrainPower = currentBrainPower + time * 2;
+		else if (studentType == 'r')
+			this.currentBrainPower = (int) (currentBrainPower + time * 0.75);
+	}
 	public int answerQuestion(int answer) {
 		if (studentType == 'r')
-			this.answerQuestion(rand.nextInt(101));
-		else if (studentType == 'g')
-			this.answerQuestion(rand.nextInt(101));
+			//this.answerQuestion(rand.nextInt(101))
+			this.currentBrainPower = currentBrainPower - 5;
+		else if (studentType == 'g' && answer)
+			//this.answerQuestion(rand.nextInt(101));
+			this.currentBrainPower = currentBrainPower -3;
 	}
 	public void creditForBestAnswer() {
 		this.currentScore = currentScore + 1;
 	}
 	public Student(char studentType, String studentName) {
-		this.studentType = 'g';
-		this.studentType = 'r';
+		if (this.studentType = 'g')
+			this.currentBrainPower = 50;
+		else if (this.studentType = 'r')
+			this.currentBrainPower = 30;
 		this.studentName = studentName;
 		
 	}

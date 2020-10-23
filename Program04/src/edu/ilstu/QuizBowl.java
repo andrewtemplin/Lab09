@@ -7,6 +7,9 @@ public class QuizBowl {
 	Student stuR = new Student();
 	stuG.study(2);
 	stuR.study(6);
+	stuG.setStudentType('g');
+	stuR.setStudentType('r');
+	
 	do {
 		
 	}
@@ -14,4 +17,6 @@ public class QuizBowl {
 		
 	}
 
+	
+	
 }
