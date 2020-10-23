@@ -32,10 +32,10 @@ public class Student {
 	public void setCurrentBrainPower(int newCurrentBrainPower) {
 		currentBrainPower = newCurrentBrainPower;
 	}
-	public int setCurrentScore() {
+	public int getCurrentScore() {
 		return currentScore;
 	}
-	public void getCurrentScore(int newCurrentScore) {
+	public void setCurrentScore(int newCurrentScore) {
 		currentScore = newCurrentScore;
 	}
 	public void study(int time) {
@@ -46,21 +46,22 @@ public class Student {
 	}
 	public int answerQuestion(int answer) {
 		if (studentType == 'r')
-			//this.answerQuestion(rand.nextInt(101))
-			this.currentBrainPower = currentBrainPower - 5;
-		else if (studentType == 'g' && answer)
-			//this.answerQuestion(rand.nextInt(101));
-			this.currentBrainPower = currentBrainPower -3;
+			this.answerQuestion(rand.nextInt(101));
+			//this.currentBrainPower = currentBrainPower - 5;
+		else if (studentType == 'g')
+			this.answerQuestion(rand.nextInt(101));
+			//this.currentBrainPower = currentBrainPower -3;
+		return answer;
 	}
 	public void creditForBestAnswer() {
 		this.currentScore = currentScore + 1;
 	}
-	public Student(char studentType, String studentName) {
-		if (this.studentType = 'g')
-			this.currentBrainPower = 50;
-		else if (this.studentType = 'r')
-			this.currentBrainPower = 30;
-		this.studentName = studentName;
+	//public Student(char studentType, String studentName) {
+	//	if (this.studentType = 'g')
+	//		this.currentBrainPower = 50;
+	//	else if (this.studentType = 'r')
+	//		this.currentBrainPower = 30;
+	//	this.studentName = studentName;
 		
 	}
-}
+//}
